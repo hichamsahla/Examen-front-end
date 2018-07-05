@@ -3,4 +3,4 @@
 
 examen klaar voor beoordeling
 
-Link=hichamsahla.nl/examen_fronend
+Link=hichamsahla.nl/examen_frontend
