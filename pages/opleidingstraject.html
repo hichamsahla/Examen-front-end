@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta name=”description” content=”i created this website for an school project on mediacollege”>
+    <meta name=”description” content=”Mediacollege”>
+    <meta name=”description” content=”hicham sahla”>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="vieuwport" content="width-device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css"/>
+    <script src="../js/script.js"></script>
+    <title>Mediacollege</title>
+<script>
+var divs = ["Menu1", "Menu2", "Menu3", "Menu4","Menu5","Menu6","Menu7"];
+var visibleDivId = null;
+function toggleVisibility(divId) {
+  if(visibleDivId === divId) {
+    //visibleDivId = null;
+  } else {
+    visibleDivId = divId;
+  }
+  hideNonVisibleDivs();
+}
+function hideNonVisibleDivs() {
+  var i, divId, div;
+  for(i = 0; i < divs.length; i++) {
+    divId = divs[i];
+    div = document.getElementById(divId);
+    if(visibleDivId === divId) {
+      div.style.display = "block";
+    } else {
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+  </head>
+  <body>
+    <div class="grid">
+
+      <div class="header">
+        <img class="logo"  alt="Mediacollege"src="../img/logo_ma.jpg">
+
+        <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Nieuws</a>
+        <a href="opleidingstraject.html">Opleidingstraject</a>
+        <a href="faq.html">FAQ</a>
+
+        <a href="contact.html">Contact</a>
+        <a href="https://www.ma-web.nl/"target="_blank" class="active">ma-web.nl</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+  <!-- script for responsive navbar -->
+  <script>
+
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+  <!-- script for responsive navbar -->
+      </div>
+
+
+      <div class="content">
+
+<div class="table-height">
+  <h2>Selecteer de gewenste periode voor meer info:</h1>
+<div id="Menu1" style="display: none;"><div class="unselectable" ><h1>Fase 1: orientatie</h1><h2>Vakken voor leerjaar 1, periode 1</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Examen proeve van bekwaamheid<span class="tooltiptext"><h3>Examen proeve van bekwaamheid</h3>Het eindexamen, waar de student kan laten zien dat hij zelfstandig een opdracht kan aannemen van de klant en de opdracht succesvol kan uitvoeren.</span></span></div>    <div class="ttrack-tableCell">22</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Persoonlijke ontwikkeling<span class="tooltiptext"><h3>Persoonlijke ontwikkeling</h3>Studenten zijn nog jong, en deze lessen helpen ze bij hun verdere persoonlijke ontwikkeling.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Nederlands<span class="tooltiptext"><h3>Nederlands</h3>Een goede beheersing van het Nederlands is belangrijk. Dit begint bijvoorbeeld al bij het kunnen opstellen van een foutloze sollicitatiebrief.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Engels<span class="tooltiptext"><h3>Engels</h3>Beheersing van de Engelse taal is onontbeerlijk in de wereld van de technologie: Engels is over het algemeen de voertaal in technologiebedrijven, en documentatie is over het algemeen geschreven in het Engels.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>26</strong></div>  </div></div><p></p></div></div>
+<div id="Menu2" style="display: none;"><div class="unselectable"><h1>Fase 1: orientatie</h1><h2>Vakken voor leerjaar 1, periode 2</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Theoretisch programmeren<span class="tooltiptext"><h3>Theoretisch programmeren</h3>De theorie achter het programmeren: wat voor contstucties komen voor in programmeertalen, wat voor soort problemen en hoe los je ze op.</span></span></div>    <div class="ttrack-tableCell">2</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Programmeren<span class="tooltiptext"><h3>Programmeren</h3>Programmeren is het hart van de technologische ontwikkelingen. Het is waar nieuwe ideeen werkelijkheid worden. In deze practicumlessen bekwaamt de student zich in het programeren door te doen.</span></span></div>    <div class="ttrack-tableCell">8</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Project<span class="tooltiptext"><h3>Project</h3>Introductielessen die uitleggen wat er allemaal bij een project komt kijken.</span></span></div>    <div class="ttrack-tableCell">6</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Werkveld orientatie<span class="tooltiptext"><h3>Werkveld orientatie</h3>De student kijkt hier naar alle mogelijke plekken waar hij zou kunnen gaan werken.</span></span></div>    <div class="ttrack-tableCell">3</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Burgerschap<span class="tooltiptext"><h3>Burgerschap</h3>Een goede werknemer of freelancer gedraagt zich natuurlijk op een professionele wijze. In deze lessen wordt daar aandacht aan besteed.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Nederlands<span class="tooltiptext"><h3>Nederlands</h3>Een goede beheersing van het Nederlands is belangrijk. Dit begint bijvoorbeeld al bij het kunnen opstellen van een foutloze sollicitatiebrief.</span></span></div>    <div class="ttrack-tableCell">2</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Engels<span class="tooltiptext"><h3>Engels</h3>Beheersing van de Engelse taal is onontbeerlijk in de wereld van de technologie: Engels is over het algemeen de voertaal in technologiebedrijven, en documentatie is over het algemeen geschreven in het Engels.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Rekenen<span class="tooltiptext"><h3>Rekenen</h3>Kunnen rekenen is belangrijk bij bijna elke technische beroep.</span></span></div>    <div class="ttrack-tableCell">2</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>26</strong></div>  </div></div><p></p></div></div>
+<div id="Menu3" style="display: none;"><div class="unselectable"><h1>Fase 2: Verdieping</h1><h2>Vakken voor leerjaar 2, periode 1</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Keuze keuzedeel Mobiel app development of Ondernemen<span class="tooltiptext"><h3>Keuze keuzedeel Mobiel app development of Ondernemen</h3>Extra keuzevakken waar de student zich verder kan bekwamen in het ontwikkelen van apps voor modiele apparaatjes, of zich kan bekwamen in ondernemerschap.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Beroepspraktijkvorming<span class="tooltiptext"><h3>Beroepspraktijkvorming</h3>Over beroepsvorming.</span></span></div>    <div class="ttrack-tableCell"></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Persoonlijke ontwikkeling<span class="tooltiptext"><h3>Persoonlijke ontwikkeling</h3>Studenten zijn nog jong, en deze lessen helpen ze bij hun verdere persoonlijke ontwikkeling.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Nederlands<span class="tooltiptext"><h3>Nederlands</h3>Een goede beheersing van het Nederlands is belangrijk. Dit begint bijvoorbeeld al bij het kunnen opstellen van een foutloze sollicitatiebrief.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Engels<span class="tooltiptext"><h3>Engels</h3>Beheersing van de Engelse taal is onontbeerlijk in de wereld van de technologie: Engels is over het algemeen de voertaal in technologiebedrijven, en documentatie is over het algemeen geschreven in het Engels.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Rekenen<span class="tooltiptext"><h3>Rekenen</h3>Kunnen rekenen is belangrijk bij bijna elke technische beroep.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>6</strong></div>  </div></div><p></p></div></div>
+<div id="Menu4" style="display: none;"><div class="unselectable"><h1>Fase 2: Verdieping</h1><h2>Vakken voor leerjaar 2, periode 2</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Keuze keuzedeel Mobiel app development of Ondernemen<span class="tooltiptext"><h3>Keuze keuzedeel Mobiel app development of Ondernemen</h3>Extra keuzevakken waar de student zich verder kan bekwamen in het ontwikkelen van apps voor modiele apparaatjes, of zich kan bekwamen in ondernemerschap.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Beroepspraktijkvorming<span class="tooltiptext"><h3>Beroepspraktijkvorming</h3>Over beroepsvorming.</span></span></div>    <div class="ttrack-tableCell"></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Persoonlijke ontwikkeling<span class="tooltiptext"><h3>Persoonlijke ontwikkeling</h3>Studenten zijn nog jong, en deze lessen helpen ze bij hun verdere persoonlijke ontwikkeling.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Nederlands<span class="tooltiptext"><h3>Nederlands</h3>Een goede beheersing van het Nederlands is belangrijk. Dit begint bijvoorbeeld al bij het kunnen opstellen van een foutloze sollicitatiebrief.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Engels<span class="tooltiptext"><h3>Engels</h3>Beheersing van de Engelse taal is onontbeerlijk in de wereld van de technologie: Engels is over het algemeen de voertaal in technologiebedrijven, en documentatie is over het algemeen geschreven in het Engels.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Rekenen<span class="tooltiptext"><h3>Rekenen</h3>Kunnen rekenen is belangrijk bij bijna elke technische beroep.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>6</strong></div>  </div></div><p></p></div></div>
+<div id="Menu5" style="display: none;"><div class="unselectable"><h1>Fase 4: stage en verdieping</h1><h2>Vakken voor leerjaar 3, periode 1</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Keuze keuzedeel Mobiel app development of Ondernemen<span class="tooltiptext"><h3>Keuze keuzedeel Mobiel app development of Ondernemen</h3>Extra keuzevakken waar de student zich verder kan bekwamen in het ontwikkelen van apps voor modiele apparaatjes, of zich kan bekwamen in ondernemerschap.</span></span></div>    <div class="ttrack-tableCell">4</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Beroepspraktijkvorming<span class="tooltiptext"><h3>Beroepspraktijkvorming</h3>Over beroepsvorming.</span></span></div>    <div class="ttrack-tableCell"></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Persoonlijke ontwikkeling<span class="tooltiptext"><h3>Persoonlijke ontwikkeling</h3>Studenten zijn nog jong, en deze lessen helpen ze bij hun verdere persoonlijke ontwikkeling.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>6</strong></div>  </div></div><p></p></div></div>
+<div id="Menu6" style="display: none;"><div class="unselectable" ><h1>Fase 4: stage en verdieping</h1><h2>Vakken voor leerjaar 3, periode 2</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Keuze keuzedeel Mobiel app development of Ondernemen<span class="tooltiptext"><h3>Keuze keuzedeel Mobiel app development of Ondernemen</h3>Extra keuzevakken waar de student zich verder kan bekwamen in het ontwikkelen van apps voor modiele apparaatjes, of zich kan bekwamen in ondernemerschap.</span></span></div>    <div class="ttrack-tableCell">4</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Beroepspraktijkvorming<span class="tooltiptext"><h3>Beroepspraktijkvorming</h3>Over beroepsvorming.</span></span></div>    <div class="ttrack-tableCell"></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Persoonlijke ontwikkeling<span class="tooltiptext"><h3>Persoonlijke ontwikkeling</h3>Studenten zijn nog jong, en deze lessen helpen ze bij hun verdere persoonlijke ontwikkeling.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>6</strong></div>  </div></div><p></p></div></div>
+<div id="Menu7" style="display: none;"><div class="unselectable" ><h1>Fase 5: examen</h1><h2>Vakken voor leerjaar 3, periode 3</h2><p></p><div class="ttrack-table">  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Vak</strong></div>    <div class="ttrack-tableHead"><strong>Uren</strong></div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Examen proeve van bekwaamheid<span class="tooltiptext"><h3>Examen proeve van bekwaamheid</h3>Het eindexamen, waar de student kan laten zien dat hij zelfstandig een opdracht kan aannemen van de klant en de opdracht succesvol kan uitvoeren.</span></span></div>    <div class="ttrack-tableCell">22</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Persoonlijke ontwikkeling<span class="tooltiptext"><h3>Persoonlijke ontwikkeling</h3>Studenten zijn nog jong, en deze lessen helpen ze bij hun verdere persoonlijke ontwikkeling.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Studieloopbaan begeleiding<span class="tooltiptext"><h3>Studieloopbaan begeleiding</h3>De studenten zijn nog jong, en soms is het maken van een beroepskeuze niet eenvoudig. Deze lessen helpen ze daarbij.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Nederlands<span class="tooltiptext"><h3>Nederlands</h3>Een goede beheersing van het Nederlands is belangrijk. Dit begint bijvoorbeeld al bij het kunnen opstellen van een foutloze sollicitatiebrief.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableCell"><span class="tooltip">Engels<span class="tooltiptext"><h3>Engels</h3>Beheersing van de Engelse taal is onontbeerlijk in de wereld van de technologie: Engels is over het algemeen de voertaal in technologiebedrijven, en documentatie is over het algemeen geschreven in het Engels.</span></span></div>    <div class="ttrack-tableCell">1</div>  </div>  <div class="ttrack-tableRow">    <div class="ttrack-tableHead"><strong>Lesuren per week</strong></div>    <div class="ttrack-tableHead"><strong>26</strong></div>  </div></div><p></p></div></div>
+</div>
+      </div>
+
+
+      <div class="sidebar">
+        <div class="buttons">
+  <a href="#" onclick="toggleVisibility('Menu1');">Periode 1.1</a>
+  <a href="#" onclick="toggleVisibility('Menu2');">Periode 1.2</a>
+  <a href="#" onclick="toggleVisibility('Menu3');">periode 2.1</a>
+  <a href="#" onclick="toggleVisibility('Menu4');">Periode 2.2</a>
+  <a href="#" onclick="toggleVisibility('Menu5');">Periode 3.1</a>
+  <a href="#" onclick="toggleVisibility('Menu6');">periode 3.2</a>
+  <a href="#" onclick="toggleVisibility('Menu7');">Periode 3.3</a>
+
+
+</div>
+
+
+
+      </div>
+      <div class="footer">
+         <h1><span class="m-purple">M</span>ediacollege</h1>
+      </div>
+</div>
+
+
+  </body>
+</html>
